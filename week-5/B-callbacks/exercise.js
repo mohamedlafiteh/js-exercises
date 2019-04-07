@@ -14,11 +14,16 @@
   EXPECTED RESULT: The #exercise1 element has textContent = "YOUR NAME" when
   the button is clicked
 */
-document.querySelector("#button1").addEventListener("click", exercise1);
+
+
 
 function exercise1() {
   // Write your implementation here
+  var addName = document.querySelector("h3");
+  addName.innerText = "my name is Mohamed";
 }
+var newButton = document.querySelector("#button1")
+newButton.addEventListener("click", exercise1);
 
 /*
   EXERCISE 2
@@ -38,6 +43,8 @@ functionThatCallsBack(exercise2);
 
 function exercise2(result) {
   // Write your implementation here
+  var exerciseTwoElement = document.querySelector("#exercise2");
+  exerciseTwoElement.textContent()
 }
 
 /*
