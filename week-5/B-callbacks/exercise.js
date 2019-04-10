@@ -43,8 +43,9 @@ functionThatCallsBack(exercise2);
 
 function exercise2(result) {
   // Write your implementation here
-  var exerciseTwoElement = document.querySelector("#exercise2");
-  exerciseTwoElement.textContent()
+   var results = document.querySelector("#exercise2");
+  results.textContent = "Hello from the function caller"
+
 }
 
 /*
@@ -60,11 +61,14 @@ function exercise2(result) {
   callback"
 
   Can you explain why we get this result? Write down your explanation in a
-  comment below (Hint: look below to see where exercise3 is called)
+  comment below (Hint: look below to see where ex)ercise3 is called
 */
 
 function exercise3(callback) {
+  callback("Hello from the callback")
   // Write your implementation here
+  //var message = document.querySelector("#exercise3");
+ // message.textContent = "Hello from the callback";
   // Write your explanation here
 }
 
