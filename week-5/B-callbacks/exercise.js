@@ -19,7 +19,7 @@
 
 function exercise1() {
   // Write your implementation here
-  var addName = document.querySelector("h3");
+  var addName = document.querySelector("#exercise1");
   addName.innerText = "my name is Mohamed";
 }
 var newButton = document.querySelector("#button1")
@@ -44,7 +44,7 @@ functionThatCallsBack(exercise2);
 function exercise2(result) {
   // Write your implementation here
    var results = document.querySelector("#exercise2");
-  results.textContent = "Hello from the function caller"
+  results.textContent = result;
 
 }
 
@@ -64,8 +64,8 @@ function exercise2(result) {
   comment below (Hint: look below to see where ex)ercise3 is called
 */
 
-function exercise3(callback) {
-  callback("Hello from the callback")
+function exercise3(extraFunction) {
+  extraFunction("Hello from the callback")
   // Write your implementation here
   //var message = document.querySelector("#exercise3");
  // message.textContent = "Hello from the callback";
@@ -81,7 +81,7 @@ function exercise3(callback) {
 // -------------------------------------
 //
 function functionThatCallsBack(callback) {
-  callback("Hello from the function caller");
+  callback("bye");
 }
 
 exercise3(text => {
